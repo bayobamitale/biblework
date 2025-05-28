@@ -18,4 +18,3 @@ cd biblework
 
 git status
 
->>>>>>> c24cfd65ee1f8368e75ed12cfde05c4c8e8fe880
