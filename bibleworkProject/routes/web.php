@@ -1,25 +1,26 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\BibleController;
-use App\Http\Controllers\ChapterController;
-use App\Http\Controllers\VerseController;
-use App\Http\Controllers\CompareController;
-use App\Http\Controllers\VoiceController;
+use App\Livewire\Search;
+use App\Livewire\SearchByKeyword;
+use App\Livewire\SearchByChapter;
+use App\Livewire\SearchByVerse;
+use App\Livewire\SearchByCompare;
+use App\Livewire\SearchByVoice;
 
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', Search::class)->name('search');
+
+Route::get('/search', SearchByKeyword::class)->name('searchResults');
+
+Route::get('/chapter', SearchByChapter::class)->name('chapterResults');
+
+Route::get('/verse', SearchByVerse::class)->name('verseResults');
+
+Route::get('/compare', SearchByCompare::class)->name('compareResults');
+
+Route::get('/voice', SearchByVoice::class)->name('voiceResults');
 
 
-Route::post('/search', [BibleController::class, 'search'])->name('search');
 
-Route::post('/chapter', [ChapterController::class, 'showChapter'])->name('showChapter');
 
-Route::post('/verse', [VerseController::class, 'showVerse'])->name('showVerse');
-
-Route::post('/compare', [CompareController::class, 'compare'])->name('compare');
-
-Route::post('/voice', [VoiceController::class, 'voice'])->name('voice');
