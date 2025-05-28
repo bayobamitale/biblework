@@ -1,4 +1,0 @@
-This is a file that is modified in Bayobranch.  
-
-It is a change management process to ensure that our main branch is clean and sane.
-So that any code going to the main branch is vetted.  
