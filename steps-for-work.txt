@@ -2,4 +2,27 @@
 
 2. Whenever you pick a task, you need to create a branch of the repo
    git checkout -b branchname
+
+3. You do all your work. Committing changes as necessary
+   git add .  
+   git commit -m "Title or description of your commit"
+
+4. Once finished, you push your changes to your repo.
+   git push
+
+ You may need to deal with conflicts if changes have been
+  made on the same file, you need to resolve the conflicts
+
+5. Create a Pull Request
+
+6. Inform someone to review your work.  
+
+7. Once your review passes. It will be merged with the main branch.
+
+8. You do a Pull or Get Latest
+
+
+9. After your branch has been merged, it can be deleted. 
+
+
   
