@@ -1,0 +1,5 @@
+1. Clone the Repository
+
+2. Whenever you pick a task, you need to create a branch of the repo
+   git checkout -b branchname
+  
