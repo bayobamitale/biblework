@@ -8,6 +8,6 @@
             <hr />
         @endforeach
     @else
-        <p>No Texts found</p>
+        <p>No Texts found. Try creating some. </p>
     @endif
 </div>
